@@ -1,7 +1,7 @@
 coisaboba = print('##############################################################')
 made = print('MADE BY @offstersi')
 nome2 = print('USE [**], [*], [-], [+], [/] COMO OPERADORES!')
-nome = str(input('BEM VINDO A CALCULADORA, PRESSIONE [C] PARA CALCULADORA OU [T] PARA TABUADA: '))
+nome = str(input('BEM VINDO A CALCULADORA BOLADA, PRESSIONE [C] PARA CALCULADORA OU [T] PARA TABUADA: '))
 tabuada = 0
 
 
