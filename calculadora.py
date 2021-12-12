@@ -1,34 +1,36 @@
-coisaboba = print('##############################################################')
-made = print('MADE BY @offstersi')
-nome2 = print('USE [**], [*], [-], [+], [/] COMO OPERADORES!')
-nome = str(input('BEM VINDO A CALCULADORA BOLADA, PRESSIONE [C] PARA CALCULADORA OU [T] PARA TABUADA: '))
 
+def inicio():
+    nome = str(input('BEM VINDO A CALCULADORA BOLADA, PRESSIONE [C] PARA CALCULADORA OU [T] PARA TABUADA: '))
+    if nome.lower() == 'c':
+        calculadora()
+    if nome.lower() == 't':
+        tabuadaaa()
 
 
 
 def main():
-    if nome.lower == 'c':
-        return(calculadora)
-    if nome.lower == 't':
-        return(tabuadaaa)
+    print('##############################################################')
+    print('MADE BY @offstersi')
+    print('USE [**], [*], [-], [+], [/] COMO OPERADORES!')
+    inicio()
+    sair()
+    
 
 
        
 def tabuadaaa():
-    if nome.lower() == 't':
-        tabuada = 0
-        numero = int(input("Insira o número: "))
-        for i in range(10):
-            tabuada += 1
-            print(numero * tabuada)
+    tabuada = 0
+    numero = int(input("Insira o número: "))
+    for i in range(10):
+        tabuada += 1
+        print(numero * tabuada)
         
     
 
 def calculadora():
-    if nome.lower() == 'c':
-        num1 = (input("Digite o primeiro número: "))
-        num2 = (input("Digite o segundo número: "))
-        operador = (input("Digite o operador: "))
+    num1 = (input("Digite o primeiro número: "))
+    num2 = (input("Digite o segundo número: "))
+    operador = (input("Digite o operador: "))
 
 
     if num1.isdigit() or num2.isdigit():
@@ -55,6 +57,9 @@ def calculadora():
     
 def sair():
     sair = input("Digite [N] para sair ou [S] para continuar")
-    if sair.lower() == 'S':
-        return(nome)
+    if sair.upper() == 'S':
+        main()
         
+
+if __name__ == "__main__":
+    main()
