@@ -8,9 +8,9 @@ nome = str(input('BEM VINDO A CALCULADORA BOLADA, PRESSIONE [C] PARA CALCULADORA
 
 def main():
     if nome.lower == 'c':
-        return(calculadora.__name__)
+        return(calculadora)
     if nome.lower == 't':
-        return(tabuadaaa.__name__)
+        return(tabuadaaa)
 
 
        
