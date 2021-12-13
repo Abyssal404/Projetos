@@ -14,6 +14,25 @@ def inicio():
     
 
 
+def calculoimc():
+    print("Bem vindo a página 2, mais opções em breve!")
+    print("Calcule seu IMC aqui :D")
+    peso = (input("Digite seu peso: "))
+    altura = (input("Digite sua altura: "))
+
+    if peso.isdigit() or altura.isdigit():
+        peso = float(peso)
+        altura = float(altura)
+    else:
+        print("Insira valores válidos!")
+        calculoimc()
+
+    imc = peso / altura
+    print("Seu IMC é:{0:.2f}".format(imc))
+
+
+
+
 def fatorial():
     n = int(input("Digite o valor: "))
     resultado=1
@@ -42,6 +61,7 @@ def main():
     print('##############################################################')
     print('USE [**], [*], [-], [+], [/] COMO OPERADORES!')
     inicio()
+    maisopc()
     sairr()
     
     
@@ -66,8 +86,9 @@ def calculadora():
         num2 = int(num2)
     else:
         print("Digite um número!!!!")
+        calculadora()
 
-    #A = ['+': +, '-': -]
+
     
     if operador == '+':
         print(num1 + num2)
@@ -92,7 +113,20 @@ def sairr():
         creditos()
         main()
 
+def maisopc():
+    mais = str(input("Digite [+] para mais opções ou [-] para continuar!!!"))
+    if mais == '+':
+        calculoimc()
+    if mais == '-':
+        main()
+
+
     
+    
+    
+        
+    
+
 
 if __name__ == "__main__":
     main()
